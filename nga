@@ -1,0 +1,477 @@
+
+-- UI creation (kept from original)
+local Unpatchabomb = Instance.new("ScreenGui") 
+local UnpatchabombFrame = Instance.new("Frame")
+local MainFrame = Instance.new("Frame")
+local LetterBox = Instance.new("TextBox")
+local WordText = Instance.new("TextLabel")
+local HowToUseText = Instance.new("TextLabel")
+local IntroFrame = Instance.new("Frame")
+local Text1 = Instance.new("TextLabel")
+local Text2 = Instance.new("TextLabel")
+local Text3 = Instance.new("TextLabel")
+local Text4 = Instance.new("TextLabel")
+local TopFrame = Instance.new("Frame")
+local T1 = Instance.new("TextLabel")
+local T2 = Instance.new("TextLabel")
+local MinimizeButton = Instance.new("TextButton")
+
+Unpatchabomb.Name = "Unpatchabomb"
+Unpatchabomb.Parent = game.CoreGui
+Unpatchabomb.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+UnpatchabombFrame.Name = "UnpatchabombFrame"
+UnpatchabombFrame.Parent = Unpatchabomb
+UnpatchabombFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnpatchabombFrame.BackgroundTransparency = 1.000
+UnpatchabombFrame.BorderSizePixel = 0
+UnpatchabombFrame.ClipsDescendants = true
+UnpatchabombFrame.Position = UDim2.new(0, 0, 1, -186)
+UnpatchabombFrame.Size = UDim2.new(0, 305, 0, 186)
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = UnpatchabombFrame
+MainFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+MainFrame.BorderSizePixel = 0
+MainFrame.ClipsDescendants = true
+MainFrame.Size = UDim2.new(1, 0, 1, 0)
+
+LetterBox.Name = "LetterBox"
+LetterBox.Parent = MainFrame
+LetterBox.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+LetterBox.BorderColor3 = Color3.fromRGB(255, 255, 255)
+LetterBox.BorderSizePixel = 0
+LetterBox.ClipsDescendants = true
+LetterBox.Position = UDim2.new(0.0196721312, 0, 0.329735368, 0)
+LetterBox.Size = UDim2.new(0.960655749, 0, 0.445913225, 0)
+LetterBox.Font = Enum.Font.GothamBold
+LetterBox.Text = "Insert Letters Here"
+LetterBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+LetterBox.TextSize = 20.000
+
+WordText.Name = "WordText"
+WordText.Parent = MainFrame
+WordText.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+WordText.BackgroundTransparency = 1.000
+WordText.BorderColor3 = Color3.fromRGB(255, 255, 255)
+WordText.BorderSizePixel = 0
+WordText.ClipsDescendants = true
+WordText.Position = UDim2.new(0, 0, 0.182795703, 0)
+WordText.Size = UDim2.new(1, 0, 0.10182704, 0)
+WordText.Font = Enum.Font.GothamBold
+WordText.Text = "Welcome to Unpatchabomb!"
+WordText.TextColor3 = Color3.fromRGB(255, 255, 255)
+WordText.TextScaled = true
+WordText.TextSize = 14.000
+WordText.TextWrapped = true
+
+HowToUseText.Name = "HowToUseText"
+HowToUseText.Parent = MainFrame
+HowToUseText.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HowToUseText.BackgroundTransparency = 1.000
+HowToUseText.BorderColor3 = Color3.fromRGB(255, 255, 255)
+HowToUseText.BorderSizePixel = 0
+HowToUseText.ClipsDescendants = true
+HowToUseText.Position = UDim2.new(0, 0, 0.833333313, 0)
+HowToUseText.Size = UDim2.new(1, 0, 0.10182704, 0)
+HowToUseText.Font = Enum.Font.GothamBold
+HowToUseText.Text = "Press Enter To Search."
+HowToUseText.TextColor3 = Color3.fromRGB(255, 255, 255)
+HowToUseText.TextScaled = true
+HowToUseText.TextSize = 14.000
+HowToUseText.TextWrapped = true
+
+IntroFrame.Name = "IntroFrame"
+IntroFrame.Parent = UnpatchabombFrame
+IntroFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+IntroFrame.BorderSizePixel = 0
+IntroFrame.ClipsDescendants = true
+IntroFrame.Size = UDim2.new(1, 0, 1, 0)
+
+Text1.Name = "Text1"
+Text1.Parent = IntroFrame
+Text1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Text1.BackgroundTransparency = 1.000
+Text1.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Text1.BorderSizePixel = 0
+Text1.ClipsDescendants = true
+Text1.Position = UDim2.new(0, 0, 0.424731195, 0)
+Text1.Size = UDim2.new(1, 0, 0.146939754, 0)
+Text1.Font = Enum.Font.Gotham
+Text1.Text = "UNPATCHABOMB"
+Text1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text1.TextScaled = true
+Text1.TextSize = 14.000
+Text1.TextWrapped = true
+
+Text2.Name = "Text2"
+Text2.Parent = IntroFrame
+Text2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Text2.BackgroundTransparency = 1.000
+Text2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Text2.BorderSizePixel = 0
+Text2.ClipsDescendants = true
+Text2.Position = UDim2.new(0, 0, 0.569892466, 0)
+Text2.Size = UDim2.new(1, 0, 0.0770473257, 0)
+Text2.Font = Enum.Font.Gotham
+Text2.Text = "LET'S WIN EASILY."
+Text2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text2.TextScaled = true
+Text2.TextSize = 14.000
+Text2.TextWrapped = true
+
+Text3.Name = "Text3"
+Text3.Parent = IntroFrame
+Text3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Text3.BackgroundTransparency = 1.000
+Text3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Text3.BorderSizePixel = 0
+Text3.ClipsDescendants = true
+Text3.Position = UDim2.new(0, 0, 0.795698881, 0)
+Text3.Size = UDim2.new(1, 0, 0.0770473257, 0)
+Text3.Font = Enum.Font.GothamBold
+Text3.Text = "Loading..."
+Text3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text3.TextScaled = true
+Text3.TextSize = 14.000
+Text3.TextWrapped = true
+
+Text4.Name = "Text4"
+Text4.Parent = IntroFrame
+Text4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Text4.BackgroundTransparency = 1.000
+Text4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Text4.BorderSizePixel = 0
+Text4.ClipsDescendants = true
+Text4.Position = UDim2.new(0, 0, 0.881720424, 0)
+Text4.Size = UDim2.new(1, 0, 0.0770473257, 0)
+Text4.Font = Enum.Font.Gotham
+Text4.Text = "Based off AngelD23's Word Bomb Finder."
+Text4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text4.TextScaled = true
+Text4.TextSize = 14.000
+Text4.TextWrapped = true
+
+TopFrame.Name = "TopFrame"
+TopFrame.Parent = UnpatchabombFrame
+TopFrame.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+TopFrame.BorderSizePixel = 0
+TopFrame.ClipsDescendants = true
+TopFrame.Size = UDim2.new(0, 305, 0, 28)
+
+T1.Name = "T1"
+T1.Parent = TopFrame
+T1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+T1.BackgroundTransparency = 1.000
+T1.BorderSizePixel = 0
+T1.ClipsDescendants = true
+T1.Position = UDim2.new(0.00999999978, 0, 0, 0)
+T1.Size = UDim2.new(0.252459019, 0, 1, 0)
+T1.Font = Enum.Font.GothamBold
+T1.Text = "UNPATCHA"
+T1.TextColor3 = Color3.fromRGB(255, 255, 255)
+T1.TextSize = 14.000
+T1.TextWrapped = true
+T1.TextXAlignment = Enum.TextXAlignment.Right
+
+T2.Name = "T2"
+T2.Parent = TopFrame
+T2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+T2.BackgroundTransparency = 1.000
+T2.BorderSizePixel = 0
+T2.ClipsDescendants = true
+T2.Position = UDim2.new(0.262295067, 0, 0, 0)
+T2.Size = UDim2.new(0.1704918, 0, 1, 0)
+T2.Font = Enum.Font.Gotham
+T2.Text = "BOMB"
+T2.TextColor3 = Color3.fromRGB(255, 255, 255)
+T2.TextSize = 14.000
+T2.TextWrapped = true
+T2.TextXAlignment = Enum.TextXAlignment.Left
+
+MinimizeButton.Name = "MinimizeButton"
+MinimizeButton.Parent = TopFrame
+MinimizeButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MinimizeButton.BackgroundTransparency = 1.000
+MinimizeButton.BorderSizePixel = 0
+MinimizeButton.ClipsDescendants = true
+MinimizeButton.Position = UDim2.new(0.908196747, 0, 0, 0)
+MinimizeButton.Size = UDim2.new(0, 28, 1, 0)
+MinimizeButton.Font = Enum.Font.Gotham
+MinimizeButton.Text = "-"
+MinimizeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MinimizeButton.TextSize = 25.000
+
+-- Huge embedded dictionary (all words >= 10 chars). ~800 entries.
+-- NOTE: these are single-token conventional English words (no concatenated phrases)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MilanG1810/testing/refs/heads/main/alotofwords", true))()
+-- Utility helpers & IDA-named functions (verbose for readability)
+local function IDA_tableItemExists(array, val)
+	for i, v in pairs(array) do
+		if v == val then
+			return true
+		end
+	end
+	return false
+end
+
+local function IDA_sanitizeInput(str)
+	if not str then return "" end
+	local s = tostring(str)
+	-- trim
+	local starti = 1
+	local endi = #s
+	while starti <= #s and s:sub(starti, starti):match("%s") do
+		starti = starti + 1
+	end
+	while endi > 0 and s:sub(endi, endi):match("%s") do
+		endi = endi - 1
+	end
+	if starti > endi then return "" end
+	return s:sub(starti, endi)
+end
+
+-- Main LocalScript logic using IDA_* names
+local function IDA_MainScript()
+	local script = Instance.new("LocalScript", MainFrame)
+
+
+	local IDA_alreadyUsed = {}
+	local IDA_LONG_WORD_MIN = 1 -- only words of length >= 10 allowed (Option A)
+ 	local minDelay = 0.01
+    local maxDelay = 0.1
+
+    local function IDA_CHAR_DELAY()
+        return math.random() * (maxDelay - minDelay) + minDelay
+    end
+	local IDA_WORD_DELAY = 0 -- seconds after full word typed
+	-- You can change the delay for the fastest WPM.
+	-- If 0 its instant.
+
+
+	-- findWord: returns first unused word containing 'substr' and meeting length requirement
+	local function IDA_findWord(substr)
+		if not substr then return nil end
+		local s = string.lower(substr)
+		if s == "" then return nil end
+		for i, v in ipairs(ENGLISH_WORDS) do
+			if not IDA_tableItemExists(IDA_alreadyUsed, v) then
+				if #v >= IDA_LONG_WORD_MIN then
+					-- use plain substring match (case-insensitive)
+					if string.find(string.lower(v), s, 1, true) then
+						table.insert(IDA_alreadyUsed, v)
+						return v
+					end
+				end
+			end
+		end
+		return nil
+	end
+
+	-- Auto type function: uses VirtualInputManager to type each character with delays
+	local function IDA_autoType(word)
+		if not word or word == "" then
+			return
+		end
+
+		local success, vim = pcall(function() return game:GetService("VirtualInputManager") end)
+		local function pressKey(keyEnum)
+			pcall(function()
+				vim:SendKeyEvent(true, keyEnum, false, game)
+				vim:SendKeyEvent(false, keyEnum, false, game)
+			end)
+		end
+
+		-- If we have VirtualInputManager, type per character with the specified delay
+		if success and vim then
+			for i = 1, #word do
+				local ch = word:sub(i, i)
+				-- handle letters
+				local up = string.upper(ch)
+				if up:match("%u") and #up == 1 and Enum.KeyCode[up] then
+					pressKey(Enum.KeyCode[up])
+				elseif ch:match("%d") then
+					-- digits mapping
+					local map = {["0"]="Zero",["1"]="One",["2"]="Two",["3"]="Three",["4"]="Four",["5"]="Five",["6"]="Six",["7"]="Seven",["8"]="Eight",["9"]="Nine"}
+					local name = map[ch]
+					if name and Enum.KeyCode[name] then
+						pressKey(Enum.KeyCode[name])
+					end
+				elseif ch == " " then
+					-- user said do not add space words; but handle space if present (rare)
+					pressKey(Enum.KeyCode.Space)
+				else
+					-- punctuation or other symbols: fallback to clipboard paste
+					-- copy the whole word to clipboard and break to paste
+					pcall(function() setclipboard(word) end)
+					task.wait(0.02)
+					break
+				end
+				task.wait(IDA_CHAR_DELAY())
+			end
+
+			-- After typing loop, wait small moment then press Enter to "submit"
+			task.wait(0.08)
+			-- Press Enter
+			pcall(function()
+				vim:SendKeyEvent(true, Enum.KeyCode.Return, false, game)
+				vim:SendKeyEvent(false, Enum.KeyCode.Return, false, game)
+			end)
+		else
+			-- fallback: set clipboard then press Enter (best-effort)
+			pcall(function() setclipboard(word) end)
+			task.wait(0.04)
+			local ok, vm = pcall(function() return game:GetService("VirtualInputManager") end)
+			if ok and vm then
+				pcall(function()
+					vm:SendKeyEvent(true, Enum.KeyCode.Return, false, game)
+					vm:SendKeyEvent(false, Enum.KeyCode.Return, false, game)
+				end)
+			end
+		end
+
+		-- wait full-word delay before allowing next automated word (as requested)
+		task.wait(IDA_WORD_DELAY)
+	end
+
+	-- FocusLost handler: when user finishes typing in LetterBox (press Enter)
+	local function IDA_onFocusLost()
+		local raw = nil
+		pcall(function() raw = script.Parent.LetterBox.Text end)
+		if not raw or raw == "" then
+			script.Parent.WordText.Text = "Error, no input provided."
+			return
+		end
+
+		local sanitized = IDA_sanitizeInput(raw)
+		if sanitized == "" then
+			script.Parent.WordText.Text = "Please type something to search."
+			return
+		end
+
+		script.Parent.WordText.Text = sanitized .. " - Searching..."
+		task.wait(0.25)
+
+		local found = IDA_findWord(sanitized)
+		if found then
+			script.Parent.WordText.Text = "'" .. found .. "' was chosen, copied, and auto-typed."
+			-- copy to clipboard as well
+			pcall(function() setclipboard(found) end)
+			task.wait(0.18)
+			-- auto-type the word (per-character delay = 0.5s, full-word wait = 1.2s)
+			IDA_autoType(found)
+		else
+			-- fallback relaxing rule (try any length if strict search fails)
+			script.Parent.WordText.Text = "No ≥" .. tostring(IDA_LONG_WORD_MIN) .. " letter match. Trying relaxed search..."
+			task.wait(0.4)
+			local fallback = nil
+			for i, v in ipairs(ENGLISH_WORDS) do
+				if not IDA_tableItemExists(IDA_alreadyUsed, v) then
+					if string.find(string.lower(v), string.lower(sanitized), 1, true) then
+						table.insert(IDA_alreadyUsed, v)
+						fallback = v
+						break
+					end
+				end
+			end
+
+			if fallback then
+				script.Parent.WordText.Text = "'" .. fallback .. "' (fallback) was chosen and auto-typed."
+				pcall(function() setclipboard(fallback) end)
+				task.wait(0.12)
+				IDA_autoType(fallback)
+			else
+				script.Parent.WordText.Text = "Couldn't find any matching word. Try different letters."
+			end
+		end
+	end
+
+	script.Parent.LetterBox.FocusLost:Connect(IDA_onFocusLost)
+end
+
+-- Launch the main IDA script coroutine
+coroutine.wrap(IDA_MainScript)()
+
+-- Animation script (unchanged)
+local function NZFXD_fake_script() -- UnpatchabombFrame.AnimationScript 
+	local script = Instance.new('LocalScript', UnpatchabombFrame)
+
+	wait(2)
+	script.Parent.IntroFrame:TweenPosition(UDim2.new(0,0,1,0), "Out", "Quad", 0.5, true)
+	
+	local Open1 = false
+	
+	script.Parent.TopFrame.MinimizeButton.MouseButton1Click:connect(function()
+		if Open1 == false then
+			Open1 = true
+			script.Parent.MainFrame:TweenSize(UDim2.new(1,0,0,0), "Out", "Quad", 0.5, true)
+			script.Parent.IntroFrame:TweenSize(UDim2.new(1,0,0,0), "Out", "Quad", 0.5, true)
+		else
+			Open1 = false
+			script.Parent.MainFrame:TweenSize(UDim2.new(1,0,1,0), "Out", "Quad", 0.5, true)
+			script.Parent.IntroFrame:TweenSize(UDim2.new(1,0,1,0), "Out", "Quad", 0.5, true)
+		end
+	end)
+end
+coroutine.wrap(NZFXD_fake_script)()
+
+-- Dragging script (unchanged)
+local function ZBKLASR_fake_script() -- UnpatchabombFrame.DraggingScript 
+	local script = Instance.new('LocalScript', UnpatchabombFrame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(ZBKLASR_fake_script)()
+
+-- Loading animation (unchanged)
+local function FCSBTZS_fake_script() -- Text3.LocalScript 
+	local script = Instance.new('LocalScript', Text3)
+
+	while true do
+		script.Parent.Text = "Loading."
+		wait (0.1)
+		script.Parent.Text = "Loading.."
+		wait (0.1)
+		script.Parent.Text = "Loading..."
+		wait (0.1)
+	end
+end
+coroutine.wrap(FCSBTZS_fake_script)()
