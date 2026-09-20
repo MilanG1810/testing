@@ -26,7 +26,7 @@ local CONSTANTS = {
         [4] = { DamageBuff = 27.5, Duration = 10 },
         [5] = { DamageBuff = 35, Duration = 10 }
     },
-    DEFAULT_PRIORITY = {"EvolvedJuggernaut", "EvolvedKingpin", "Minigunner", "Accelerator", "Engineer", "Necromancer", "Trapper", "Ace Pilot"}
+    DEFAULT_PRIORITY = {"EvolvedJuggernaut", "Gatling Gun", "EvolvedKingpin", "Minigunner", "Accelerator", "Engineer", "Necromancer", "Trapper"}
 }
 
 local SessionState = {
